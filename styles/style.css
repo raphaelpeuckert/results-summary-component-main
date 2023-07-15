@@ -62,13 +62,13 @@ h3 {
     max-width: 740px;
     display: flex;
     background-color: var(--white);
-    border-radius: 20px;
+    border-radius: 32px;
     overflow: hidden;
 }
 
 .result-container {
     width: 50%;
-    border-radius: 20px;
+    border-radius: 32px;
     color: var(--white);
     display: flex;
     flex-direction: column;
