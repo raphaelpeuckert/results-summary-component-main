@@ -185,9 +185,72 @@ h3 {
     padding: 16px;
     border-radius: 50px;
     margin-top: 24px;
+    transition: opacity .5s ease-in-out;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+@keyframes gradient-transition {
+    from {
+        background-color: var(--dark-gray-blue);
+        opacity: 1;
+    }
+    to {
+        background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    }
 }
 
 
+
+@media (max-width: 700px) {
+    p{
+        font-size: 1.6rem;
+    }
+
+    #card {
+        flex-direction: column;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .result-container--title {
+        margin: 24px 0;
+    }
+    .result-container {
+        width: 100%;
+        border-radius: 0 0 32px 32px;
+    }
+    .result {
+        width: 140px;
+        margin-bottom: 24px;
+    }
+    .result h2 {
+        font-size: 5.6rem;
+    }
+    .score-description--title {
+        margin: 0 0 8px 0;
+    }
+    .score-description {
+        margin-bottom: 40px;
+    }
+
+    .summary-container {
+        width: 100%;
+        gap: 0;
+        padding: 0 30px;
+    }
+    .summary-container--title {
+        margin: 24px 0 0 0;
+    }
+    .summary-stats {
+        margin-top: 16px;
+    }
+    .summary-stats:first-of-type {
+        margin-top: 24px;
+    }
+}
 
 
 .attribution {
